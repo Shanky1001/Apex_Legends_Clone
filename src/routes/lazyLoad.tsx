@@ -1,4 +1,5 @@
 import React from "react";
+import { route } from "types";
 
 const Home = React.lazy(() => import("../pages/home/Home"));
 const Maps = React.lazy(() => import("../pages/maps/Maps"));
@@ -10,7 +11,7 @@ const PageNotFound = React.lazy(
 	() => import("../pages/not-found/PageNotFound")
 );
 
-export const PUBLIC_ROUTES = [
+export const PUBLIC_ROUTES:route[] = [
 	{
 		path: "/",
 		component: Home,

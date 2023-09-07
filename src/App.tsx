@@ -1,16 +1,40 @@
-import Home from "pages/home/Home";
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LayoutWrapper from "LayoutWrapper";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { PUBLIC_ROUTES } from "routes/lazyLoad";
+import { SuspenseWrapperProps } from "types";
 
 const App = () => {
-  
+	const location = useLocation();
+	useEffect(() => {
+		window.scrollTo({ top: 0 });
+	}, [location]);
+
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Home />} />
-			</Routes>
-		</BrowserRouter>
+		<Routes>
+			<Route path="/" element={<LayoutWrapper />}>
+				{PUBLIC_ROUTES.map((route: any) => (
+					<Route
+						path={route.path}
+						key={route.path}
+						element={
+							<SuspenseWrapper>
+								<route.component />
+							</SuspenseWrapper>
+						}
+					/>
+				))}
+			</Route>
+		</Routes>
 	);
 };
 
 export default App;
+
+const SuspenseWrapper = (props: SuspenseWrapperProps) => {
+	return (
+		<React.Suspense fallback={<h1>loading ...</h1>}>
+			{props.children}
+		</React.Suspense>
+	);
+};

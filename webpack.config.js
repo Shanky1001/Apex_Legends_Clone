@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 // const Dotenv = require("dotenv-webpack");
 
@@ -25,7 +25,7 @@ module.exports = () => {
           test: /\.css$/i,
           exclude: /node_modules/,
           include: path.resolve(__dirname, "src"),
-          use: ["style-loader", "css-loader", "postcss-loader"],
+          use: ["postcss-loader", "style-loader", "css-loader"],
         },
         // {
         //   test: /\.(scss|sass)$/,
@@ -64,7 +64,7 @@ module.exports = () => {
       // runtimeChunk: "single",
     },
     devServer: {
-      historyApiFallback: {index: "/", disableDotRule: true},
+      historyApiFallback: { index: "/", disableDotRule: true },
       port: 3000,
       open: true,
       compress: true,
