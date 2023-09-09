@@ -18,11 +18,15 @@
 
 	.btn-learn-more {
 		@apply px-[27px] text-[18px] py-[15px] bg-red-600 rounded mt-[15px] hover:scale-105
-		transition-all duration-75  cursor-pointer text-white
+		transition-all duration-75  cursor-pointer text-white;
 	}
 
 	.sub-hero-desc {
-		@apply w-[100%] 400:w-[61%] 760:w-[50%] text-[15px] 330:text-[15px]  400:text-[16px] 1400:text-[19px] text-center text-white tracking-wide
+		@apply w-[100%] 400:w-[61%] 760:w-[50%] text-[15px] 330:text-[15px]  400:text-[16px] 1400:text-[19px] text-center text-white tracking-wide;
+	}
+
+	.latest-news-card {
+		@apply w-[367px] ml-0 720:ml-[15px] mt-[25px] 745:mt-0 h-[500px] 1225:h-[85%] cursor-pointer bg-[#161616] relative fcc;
 	}
 }
 

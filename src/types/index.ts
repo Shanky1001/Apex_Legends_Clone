@@ -46,6 +46,14 @@ export interface dropState {
 	social: boolean;
 }
 
+export interface latestNews {
+	image: string;
+	header: string;
+	message: string;
+	date: string;
+	href: string;
+}
+
 // Extras
 export interface svgImage {
 	className: string;

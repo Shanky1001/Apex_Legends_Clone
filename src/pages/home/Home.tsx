@@ -1,7 +1,10 @@
-import { DeathReborn, DeathReborn770 } from "assets";
+import { DeathReborn, DeathReborn770, LatestNewsBG } from "assets";
 import Hero from "components/Hero/Hero";
+import NewsCard from "components/LatestNewsCard/NewsCard";
 import VideoPlayer from "components/VideoPopup/VideoPlayer";
+import { LATEST_NEWS } from "../../constants/index";
 import React, { FC, useState } from "react";
+import { latestNews } from "types";
 
 const Home: FC = () => {
 	const [play, setPlay] = useState(false);
@@ -9,7 +12,7 @@ const Home: FC = () => {
 		<main>
 			<Hero play={play} setPlay={setPlay} />
 			{play && <VideoPlayer play={play} setPlay={setPlay} />}
-            {/* Sub Hero section */}
+			{/* Sub Hero section */}
 			<section
 				id="sub-hero"
 				className="w-full h-[800px] 760:h-[460px] relative"
@@ -55,6 +58,25 @@ const Home: FC = () => {
 					}}
 				></div>
 			</section>
+			{/* Latest News Section */}
+			<div className="w-full h-[2200px] 745:h-[1500px] 1123:h-[800px] relative overflow-hidden">
+				<div className="w-full h-full fcc  mt-[50px] absolute ">
+					<div className=" w-[98%] 1400:w-[1300px] h-full m-auto">
+						<div
+							id="monospace"
+							className="w-full h-[13%] text-black text-[33px] font-bold  frc justify-center "
+						>
+							LATEST NEWS
+						</div>
+						<div className="w-full h-[81%] frc items-start justify-center flex-wrap ">
+							{LATEST_NEWS.map((data: latestNews) => (
+								<NewsCard data={data} />
+							))}
+						</div>
+					</div>
+				</div>
+				<img src={LatestNewsBG} className="w-full h-full" />
+			</div>
 		</main>
 	);
 };

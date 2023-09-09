@@ -1,4 +1,5 @@
-import { about, free, social } from "types";
+import { News1, News2, News3 } from "assets";
+import { about, free, latestNews, social } from "types";
 
 const ABOUT: about[] = [
 	{
@@ -249,4 +250,28 @@ const LEGENDS: any[] = [
 	},
 ];
 
-export { ABOUT, SOCIAL, FREE_DOWNLOAD, COMPETE, ROLES,LEGENDS };
+const LATEST_NEWS: latestNews[] = [
+	{
+		image: News1 as string,
+		header: "Apex Legends™: August 2023 Revenant Reborn Dev AMA",
+		message: "Apex Legends™: August 2023 Revenant Reborn Dev AMA",
+		date: "SEP 1,2023",
+		href: "https://www.ea.com/games/apex-legends/news/august-2023-revenant-dev-ama",
+	},
+	{
+		image: News2 as string,
+		header: "Apex Legends™: August 2023 Lore Dev AMA",
+		message: "Apex Legends™: August 2023 Lore Dev AMA",
+		date: "Aug 11,2023",
+		href: "https://www.ea.com/games/apex-legends/news/august-2023-lore-dev-ama",
+	},
+	{
+		image: News3 as string,
+		header: "Apex Legends™: Resurrection Patch Notes",
+		message: "Apex Legends™: Resurrection Patch Notes",
+		date: "Aug 7,2023",
+		href: "https://www.ea.com/games/apex-legends/news/resurrection-patch-notes",
+	},
+];
+
+export { ABOUT, SOCIAL, FREE_DOWNLOAD, COMPETE, ROLES, LEGENDS, LATEST_NEWS };
