@@ -15,15 +15,11 @@ const VideoPlayer = ({ play, setPlay }: heroComponent) => {
 			>
 				<HiXMark className="text-[40px]" />
 			</div>
-			<div className="w-full 1077:w-[70%] h-full m-auto frc">
+			<div className="w-full 1077:w-[80%] h-full m-auto frc">
 				<div className=" relative overflow-hidden w-[100%] pt-[56.25%]">
 					<iframe
 						frameBorder="0"
 						allowFullScreen
-						//   mozallowfullscreen
-						//   msallowfullscreen="msallowfullscreen"
-						//   oallowfullscreen="oallowfullscreen"
-						//   webkitallowfullscreen="webkitallowfullscreen"
 						width="100%"
 						height="100%"
 						src={`https://www.youtube.com/embed/${item}`}
