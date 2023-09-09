@@ -38,6 +38,18 @@ module.exports = () => {
           type: "asset/resource",
         },
         {
+          test: /\.mp4$/,
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[name].[ext]",
+                outputPath: "video"
+              }
+            }
+          ]
+        },
+        {
           test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
           type: "asset/inline",
         },

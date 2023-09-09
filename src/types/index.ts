@@ -1,3 +1,4 @@
+import MobileNav from "components/NavBar/MobileNav";
 import { FC, ReactElement } from "react";
 
 export interface SuspenseWrapperProps {
@@ -30,6 +31,11 @@ export interface free {
 export interface mobileNav {
 	menu: boolean;
 	setMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface heroComponent {
+	play: boolean;
+	setPlay: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface dropState {

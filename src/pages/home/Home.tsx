@@ -1,8 +1,12 @@
-import React, { FC } from 'react'
+import Hero from 'components/Hero/Hero'
+import React, { FC, useState } from 'react'
 
 const Home:FC = () => {
+    const [play,setPlay] = useState(false)
   return (
-    <div>Home</div>
+    <>
+    <Hero play={play} setPlay={setPlay} />
+    </>
   )
 }
 
