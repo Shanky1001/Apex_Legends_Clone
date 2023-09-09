@@ -15,7 +15,11 @@ import Gun from "./images/gun_battle_royal.png";
 import Head from "./images/head_battle_royal.png";
 import PlatformLogos from "./images/platforms-logos.png";
 import FooterDust from "./images/footer.jpg";
-
+import RespawnLogo from "./images/respawn-logo.png";
+import ApexGlobalLogo from "./images/apex-global-series-logo.png";
+import TeenWarning from "./images/teen-warning.png";
+import ApexMobileLogo from "./images/apex-mobile-logo.png";
+import ApexFooterLogo from "./images/apex-footer-logo.png";
 
 export {
 	EA_Logo,
@@ -34,5 +38,9 @@ export {
 	Head,
 	Gun,
 	PlatformLogos,
-	FooterDust
+	FooterDust,
+	RespawnLogo,
+	ApexGlobalLogo,
+	ApexMobileLogo,
+	TeenWarning,ApexFooterLogo
 };

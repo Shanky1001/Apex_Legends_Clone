@@ -67,6 +67,12 @@ export interface country {
 	suggested?: boolean;
 }
 
+export interface joinConversation {
+	name:string,
+	href:string
+}
+
+
 // Extras
 export interface svgImage {
 	className: string;

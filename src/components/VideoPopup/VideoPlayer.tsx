@@ -2,12 +2,11 @@ import { HiXMark } from "react-icons/hi2";
 import { heroComponent } from "types";
 
 const VideoPlayer = ({ play, setPlay }: heroComponent) => {
-	var items:string[] = ["iFxUw5Cckdw", "C-WQcCqecHg", "KUY2MMRmLLM"];
-	var item:string = items[Math.floor(Math.random() * items.length)];
+	var items: string[] = ["iFxUw5Cckdw", "C-WQcCqecHg", "KUY2MMRmLLM"];
+	var item: string = items[Math.floor(Math.random() * items.length)];
 	return (
 		<div
-			className={` w-full h-screen
-       bg-black absolute  frc justify-center z-[99999] top-0  text-white  left-0`}
+			className={` w-full h-screen bg-black absolute  frc justify-center z-[99999] top-0  text-white  left-0`}
 		>
 			<div
 				onClick={() => setPlay(false)}

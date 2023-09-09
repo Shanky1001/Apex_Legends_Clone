@@ -1,5 +1,13 @@
 import { Gun, Head, News1, News2, News3, Trophy } from "assets";
-import { about, battleRoyal, country, free, latestNews, social } from "types";
+import {
+	about,
+	battleRoyal,
+	country,
+	free,
+	joinConversation,
+	latestNews,
+	social,
+} from "types";
 
 const ABOUT: about[] = [
 	{
@@ -330,6 +338,45 @@ const COUNTRIES: country[] = [
 	},
 ];
 
+const JOIN_CONVERSATION: joinConversation[] = [
+	{
+		name: "Home",
+		href: "https://www.ea.com/games/apex-legends",
+	},
+	{
+		name: "About",
+		href: "https://www.ea.com/games/apex-legends/about",
+	},
+	{
+		name: "Legends",
+		href: "https://www.ea.com/games/apex-legends/about/characters",
+	},
+	{
+		name: "FAQ",
+		href: "https://www.ea.com/games/apex-legends/about/frequently-asked-questions",
+	},
+	{
+		name: "PC Specs",
+		href: "https://www.ea.com/games/apex-legends/about/pc-system-requirements",
+	},
+	{
+		name: "News",
+		href: "https://www.ea.com/games/apex-legends/news",
+	},
+	{
+		name: "Media",
+		href: "https://www.ea.com/games/apex-legends/media",
+	},
+	{
+		name: "Forums",
+		href: "https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en",
+	},
+	{
+		name: "Play Free Now*",
+		href: "https://www.ea.com/games/apex-legends/play-now-for-free",
+	},
+];
+
 export {
 	ABOUT,
 	SOCIAL,
@@ -338,5 +385,7 @@ export {
 	ROLES,
 	LEGENDS,
 	LATEST_NEWS,
-	BATTLE_ROYAL,COUNTRIES
+	BATTLE_ROYAL,
+	COUNTRIES,
+	JOIN_CONVERSATION,
 };
