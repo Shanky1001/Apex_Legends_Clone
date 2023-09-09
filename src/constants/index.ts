@@ -1,5 +1,5 @@
-import { News1, News2, News3 } from "assets";
-import { about, free, latestNews, social } from "types";
+import { Gun, Head, News1, News2, News3, Trophy } from "assets";
+import { about, battleRoyal, free, latestNews, social } from "types";
 
 const ABOUT: about[] = [
 	{
@@ -274,4 +274,34 @@ const LATEST_NEWS: latestNews[] = [
 	},
 ];
 
-export { ABOUT, SOCIAL, FREE_DOWNLOAD, COMPETE, ROLES, LEGENDS, LATEST_NEWS };
+const BATTLE_ROYAL: battleRoyal[] = [
+	{
+		image: Trophy as string,
+		header: "Legendary Characters",
+		message:
+			"Explore a growing roster of powerful Legends, each with their own unique personality, strengths, and abilities.",
+	},
+	{
+		image: Gun as string,
+		header: "The Ultimate Squad",
+		message:
+			"Choose your Legend, team up, and combine your unique skills to be the last squad standing.",
+	},
+	{
+		image: Head as string,
+		header: "Strategic Combat",
+		message:
+			"Master an expanding assortment of powerful weapons, unique abilities, and game-changing equipment in a variety of environments and limited-time and permanent modes.",
+	},
+];
+
+export {
+	ABOUT,
+	SOCIAL,
+	FREE_DOWNLOAD,
+	COMPETE,
+	ROLES,
+	LEGENDS,
+	LATEST_NEWS,
+	BATTLE_ROYAL,
+};

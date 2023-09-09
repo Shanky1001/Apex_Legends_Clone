@@ -54,6 +54,12 @@ export interface latestNews {
 	href: string;
 }
 
+export interface battleRoyal {
+	image:string,
+	header:string,
+	message:string
+}
+
 // Extras
 export interface svgImage {
 	className: string;

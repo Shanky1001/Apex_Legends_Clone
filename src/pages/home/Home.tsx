@@ -1,8 +1,13 @@
-import { DeathReborn, DeathReborn770, LatestNewsBG } from "assets";
+import {
+	BattleRoyalBG,
+	DeathReborn,
+	DeathReborn770,
+	LatestNewsBG,
+} from "assets";
 import Hero from "components/Hero/Hero";
 import NewsCard from "components/LatestNewsCard/NewsCard";
 import VideoPlayer from "components/VideoPopup/VideoPlayer";
-import { LATEST_NEWS } from "../../constants/index";
+import { BATTLE_ROYAL, LATEST_NEWS } from "../../constants/index";
 import React, { FC, useState } from "react";
 import { latestNews } from "types";
 
@@ -59,7 +64,7 @@ const Home: FC = () => {
 				></div>
 			</section>
 			{/* Latest News Section */}
-			<div className="w-full h-[2200px] 745:h-[1500px] 1123:h-[800px] relative overflow-hidden">
+			<section className="w-full h-[2200px] 745:h-[1500px] 1123:h-[800px] relative overflow-hidden">
 				<div className="w-full h-full fcc  mt-[50px] absolute ">
 					<div className=" w-[98%] 1400:w-[1300px] h-full m-auto">
 						<div
@@ -76,7 +81,52 @@ const Home: FC = () => {
 					</div>
 				</div>
 				<img src={LatestNewsBG} className="w-full h-full" />
-			</div>
+			</section>
+			{/* Battle Royal */}
+			<section className="w-full h-[1950px] 720:h-[1300px] 1077:h-[700px] overflow-hidden relative">
+				<div className="w-full h-full absolute">
+					<div className="w-[90%] 1400:w-[1200px] h-full m-auto ">
+						<div
+							id="monospace"
+							className="w-full h-[15%] text-center mt-[15px] frc justify-center text-white text-[44px] tracking-tighter font-bold"
+						>
+							BEYOND BATTLE ROYALE
+						</div>
+						<div
+							id="Roboto"
+							className="w-full h-[10%] mb-[20px]  text-center text-[22px] frc justify-center text-white  tracking-tighter "
+						>
+							Show 'em what you're made of in Apex Legends, a
+							free-to-play hero shooter where <br />
+							contenders from across the Frontier team up to
+							battle for glory, fame, and fortune.
+						</div>
+						<div className="w-full h-[75%] text-white justify-between frc items-start flex-wrap">
+							{BATTLE_ROYAL.map((data) => (
+								<div className="w-[30%] h-[440px] 1225:h-[90%] fcc">
+									<img
+										src={data.image}
+										className="w-full h-auto"
+									/>
+									<span
+										id="monospace"
+										className="text-[22px] mt-[20px] font-bold"
+									>
+										{data.header}
+									</span>
+									<p
+										id="Roboto"
+										className="text-center mt-[10px] text-[18px]"
+									>
+										{data.message}
+									</p>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+				<img src={BattleRoyalBG} className="w-full h-auto" />
+			</section>
 		</main>
 	);
 };

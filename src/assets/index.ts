@@ -9,7 +9,10 @@ import LatestNewsBG from "./images/latest-news-bg.jpg";
 import News1 from "./images/news-1.png";
 import News2 from "./images/news-2.png";
 import News3 from "./images/news-3.jpg";
-
+import BattleRoyalBG from "./images/battle-royal-bg.jpg";
+import Trophy from "./images/trophy_battle_royal.png";
+import Gun from "./images/gun_battle_royal.png";
+import Head from "./images/head_battle_royal.png";
 export {
 	EA_Logo,
 	EA_TopNav,
@@ -22,4 +25,8 @@ export {
 	News1,
 	News2,
 	News3,
+	BattleRoyalBG,
+	Trophy,
+	Head,
+	Gun,
 };
