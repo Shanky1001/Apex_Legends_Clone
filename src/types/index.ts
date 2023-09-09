@@ -55,9 +55,16 @@ export interface latestNews {
 }
 
 export interface battleRoyal {
-	image:string,
-	header:string,
-	message:string
+	image: string;
+	header: string;
+	message: string;
+}
+
+export interface country {
+	code: string;
+	label: string;
+	phone: string;
+	suggested?: boolean;
 }
 
 // Extras

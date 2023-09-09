@@ -6,15 +6,12 @@ const Hero = ({ play, setPlay }: heroComponent) => {
 	return (
 		<section
 			id="Roboto"
-			className="w-full h-[650px] bg-black relative  overflow-hidden "
+			className="w-full h-[70vh] bg-black relative  overflow-hidden "
 		>
 			<div className="w-full h-full fcc justify-center absolute inset-0 z-50 translate-y-[-60px] ">
-				<img src={HeroLogo} />
-				<span className=" text-slate-200 text-[18px] text-center">
-					Apex Legends: Revelry. Drop in and be legendary with new
-					Team Deathmatch,
-					<br />
-					remastered Legend classes, the Nemesis rifle and more!
+				<img src={HeroLogo} className={"w-[235px] h-[200px]"} />
+				<span className=" text-slate-200 mt-3 text-[20px] text-center">
+					Death is Reborn in Apex Legends: Resurrection.
 				</span>
 				<div className=" w-full 450:w-auto fcc 720:frc mt-[20px] ">
 					<a

@@ -13,6 +13,8 @@ import BattleRoyalBG from "./images/battle-royal-bg.jpg";
 import Trophy from "./images/trophy_battle_royal.png";
 import Gun from "./images/gun_battle_royal.png";
 import Head from "./images/head_battle_royal.png";
+
+
 export {
 	EA_Logo,
 	EA_TopNav,
