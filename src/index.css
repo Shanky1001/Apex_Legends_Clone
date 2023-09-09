@@ -32,14 +32,14 @@
 	scrollbar-width: none; /* Firefox */
 }
 
-#cutomscoll::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 6px;
 }
-#cutomscoll::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	background: black;
 }
 
-#cutomscoll::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background: white;
 	border-radius: 8px;
 }

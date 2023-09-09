@@ -18,11 +18,11 @@ const MobileNav = ({ menu, setMenu }: mobileNav) => {
 	return (
 		<div
 			id="monospace"
-			className={`w-full 400:w-[350px] h-[100vh] bg-black bottom-0  z-[999] fixed fcc ${
+			className={`w-full 400:w-[350px] h-[100vh] bg-black bottom-0 z-[999] fixed fcc ${
 				menu ? "" : "hidden"
 			}  animate-slideleft2 overflow-auto `}
 		>
-			<div className="w-full h-[70px] frc justify-center relative">
+			<div className="w-full h-[70px] mt-4 frc justify-center relative">
 				<APEX_LEGEND_LOGO className={"w-[70px]"} />
 				<div
 					onClick={() => setMenu(false)}
