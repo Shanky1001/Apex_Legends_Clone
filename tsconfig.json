@@ -20,7 +20,10 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "baseUrl": "./src",
-		"typeRoots": ["./node_modules/@types/", "./src/shared/@types/"]
+        "typeRoots": [
+            "./node_modules/@types/",
+            "./src/shared/@types/"
+        ]
     },
     "include": [
         "src"

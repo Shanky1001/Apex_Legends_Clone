@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 // const Dotenv = require("dotenv-webpack");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = () => {
   return {
@@ -13,6 +14,7 @@ module.exports = () => {
       publicPath: "/",
       clean: true,
     },
+    stats: "errors-only",
     mode: "development",
     module: {
       rules: [
@@ -25,7 +27,7 @@ module.exports = () => {
           test: /\.css$/i,
           exclude: /node_modules/,
           include: path.resolve(__dirname, "src"),
-          use: ["postcss-loader", "style-loader", "css-loader"],
+          use: ["style-loader", "css-loader", "postcss-loader"],
         },
         // {
         //   test: /\.(scss|sass)$/,
@@ -51,6 +53,11 @@ module.exports = () => {
       //   systemvars: true,
       //   allowEmptyValues: false,
       // }),
+      new ESLintPlugin({
+        emitError: true,
+        emitWarning: true,
+        failOnError: true
+      }),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "./public/index.html"),
       }),

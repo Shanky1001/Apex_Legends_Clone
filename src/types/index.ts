@@ -26,3 +26,21 @@ export interface free {
 	name: string;
 	href: string;
 }
+
+export interface mobileNav {
+	menu: boolean;
+	setMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface dropState {
+	about: boolean;
+	modes: boolean;
+	community: boolean;
+	compete: boolean;
+	social: boolean;
+}
+
+// Extras
+export interface svgImage {
+	className: string;
+}

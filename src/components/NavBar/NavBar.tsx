@@ -8,13 +8,15 @@ import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { SOCIAL, ABOUT, FREE_DOWNLOAD } from "../../constants/index";
+import { APEX_LEGEND_LOGO } from "assets/SVGImages";
+import MobileNav from "./MobileNav";
 
 const NavBar = () => {
 	return (
-		<div>
+		<>
 			<TopNav />
 			<BottomNav />
-		</div>
+		</>
 	);
 };
 
@@ -67,7 +69,7 @@ const BottomNav = () => {
 						<HiOutlineXMark className="text-white text-[40px] cursor-pointer" />
 					</div>
 					<Link to={"/"}>
-						<img src="/ApexTextlogo.svg" className="min-w-[55px]" />
+                        <APEX_LEGEND_LOGO className={"min-w-[55px]"}/>
 					</Link>
 				</div>
 				<div className="text-white hover:text-red-500 relative cursor-pointer  group hidden 1090:flex   ">
@@ -288,6 +290,7 @@ const BottomNav = () => {
 					</div>
 				</div>
 			</div>
+            <MobileNav menu={menu} setMenu={setMenu} />
 		</nav>
 	);
 };
