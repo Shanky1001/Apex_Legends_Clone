@@ -42,7 +42,7 @@ const Home: FC = () => {
 						className="w-full h-[800px] 760:h-[460px] relative"
 					>
 						<div className="w-full h-full   absolute z-10 frc justify-between">
-							<div className="w-full h-full fcc justify-end mb-16 760:frc 760:justify-center">
+							<div className="w-full h-full fcc justify-around 760:frc 760:justify-center">
 								<div className="w-full h-auto fcc justify-center">
 									<span
 										id="monospace"
@@ -84,12 +84,12 @@ const Home: FC = () => {
 						></div>
 					</section>
 					{/* Latest News Section */}
-					<section className="w-full h-[2200px] 745:h-[1500px] 1123:h-[800px] relative overflow-hidden">
+					<section className="w-full h-[1800px] 745:h-[1200px] 1170:h-[800px] relative overflow-hidden">
 						<div className="w-full h-full fcc  mt-[50px] absolute ">
 							<div className=" w-[98%] 1400:w-[1300px] h-full m-auto">
 								<div
 									id="monospace"
-									className="w-full h-[13%] text-black text-[33px] font-bold  frc justify-center "
+									className="w-full 760:mb-6 text-black text-[33px] font-bold  frc justify-center "
 								>
 									LATEST NEWS
 								</div>
@@ -103,12 +103,12 @@ const Home: FC = () => {
 						<img src={LatestNewsBG} className="w-full h-full" />
 					</section>
 					{/* Battle Royal section */}
-					<section className="w-full h-[1950px] 720:h-[1300px] 1077:h-[700px] overflow-hidden relative">
+					<section className="w-full h-[1950px] bg-black 720:h-[1300px] 1077:h-[700px] overflow-hidden relative">
 						<div className="w-full h-full absolute">
 							<div className="w-[90%] 1400:w-[1200px] h-full m-auto ">
 								<div
 									id="monospace"
-									className="w-full h-[15%] text-center mt-[15px] frc justify-center text-white text-[44px] tracking-tighter font-bold"
+									className="w-full text-center mt-[15px] frc justify-center text-white text-[44px] tracking-tighter font-bold"
 								>
 									BEYOND BATTLE ROYALE
 								</div>
@@ -122,12 +122,12 @@ const Home: FC = () => {
 									contenders from across the Frontier team up
 									to battle for glory, fame, and fortune.
 								</div>
-								<div className="w-full h-[75%] text-white justify-between frc items-start flex-wrap">
+								<div className="w-full h-[80%] fcc 720:justify-center text-white  720:frc 720:gap-4 flex-wrap">
 									{BATTLE_ROYAL.map((data) => (
-										<div className="w-[30%] h-[440px] 1225:h-[90%] fcc">
+										<div className="w-[50%] h-[500px] 720:w-[45%] 1000:w-[30%] justify-center 1225:h-[90%] fcc">
 											<img
 												src={data.image}
-												className="w-full h-auto"
+												className="w-[300px] 400:w-full max-w-2xl"
 											/>
 											<span
 												id="monospace"
@@ -170,7 +170,7 @@ const Home: FC = () => {
 										events, and promotions) by email.
 									</p>
 								</div>
-								<form className="w-full 1225:w-[55%]  h-full">
+								<form className="w-full 720:w-[70%] 1225:w-[55%]  h-full">
 									<div className="mt-[130px] w-[98%] 720:w-[75%] h-[60px] m-auto rounded-[3px]">
 										<input
 											type={"email"}
@@ -178,8 +178,8 @@ const Home: FC = () => {
 											className="w-full form-input"
 										/>
 									</div>
-									<div className="mt-[35px] w-[98%] 720:w-[75%] h-[60px] frc justify-between m-auto">
-										<div className="w-full 400:w-[40%] h-full   rounded-[3px] mt-0 400:mr-[15px]">
+									<div className="mt-[35px] m-auto mb-5 w-[98%] 720:w-[75%] h-[60px] frc justify-between flex-wrap">
+										<div className="w-full 400:w-[40%] h-full rounded-[3px] mt-0 400:mr-[15px]">
 											<input
 												type={"date"}
 												placeholder="Birthdate"
@@ -188,13 +188,13 @@ const Home: FC = () => {
 										</div>
 										<div
 											id="monospace"
-											className="cursor-pointer hidden 400:inline relative w-[60%] h-full  border-[2px] border-black  outline-none  rounded-[3px]"
+											className="cursor-pointer w-full 400:inline relative 400:w-[55%] h-full  border-[2px] border-black  outline-none rounded-[3px]"
 										>
 											<div
 												onClick={() => setOpen(true)}
 												className=""
 											>
-												<span className="  pt-[4px] frc px-[25px] text-gray-400 text-[14px]">
+												<span className="pt-[4px] frc px-[25px] text-gray-400 text-[14px]">
 													Country
 												</span>
 												<span className=" frc justify-between  px-[25px] text-[black] text-[17px]">
@@ -238,7 +238,7 @@ const Home: FC = () => {
 											)}
 										</div>
 									</div>
-									<div className="w-[98%] 720:w-[75%] h-auto mt-[30px] fcc m-auto select-none">
+									<div className="w-[98%] 720:w-[75%] h-auto mt-[70px] 400:mt-[20px] fcc m-auto select-none">
 										<div className="w-full h-[150px]  frc items-start ">
 											<div
 												onClick={() => setCheck(!Check)}
@@ -254,19 +254,19 @@ const Home: FC = () => {
 													/>
 												</div>
 											</div>
-											<div>
+											<div className="w-[95%]">
 												<p
 													id="monospace"
-													className="px-[10px] text-[15px] 1090:text-[18px]"
+													className="px-[10px] break-words text-[15px] 1090:text-[18px]"
 												>
 													I can unsubscribe at any
-													time by changing my
+													time by changing my 
 													<span className="text-red-500">
-														email preferences,
+														{" "}email preferences,
 													</span>
 													contacting
 													<span className="text-red-500">
-														privacyadmin.ea.com,
+														{" "}privacyadmin.ea.com,
 													</span>
 													or writing to Electronic
 													Arts Inc., ATTN: Email
@@ -277,7 +277,7 @@ const Home: FC = () => {
 											</div>
 										</div>
 									</div>
-									<div className="w-[98%] 720:w-[75%] h-auto frc  justify-center 400:justify-start m-auto mt-[70px] 400:mt-0 1225:mt-[20px]">
+									<div className="w-[98%] 720:w-[75%] h-auto frc  justify-center 400:justify-start m-auto mt-[20px] 400:mt-0 1225:mt-[20px]">
 										<button
 											id="monospace"
 											className="btn-signUp"

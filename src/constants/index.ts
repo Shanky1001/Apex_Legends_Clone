@@ -94,8 +94,6 @@ const FREE_DOWNLOAD: free[] = [
 	},
 ];
 
-const COMPETE: any[] = [];
-
 const ROLES: any[] = [
 	{
 		name: "All",
@@ -381,7 +379,6 @@ export {
 	ABOUT,
 	SOCIAL,
 	FREE_DOWNLOAD,
-	COMPETE,
 	ROLES,
 	LEGENDS,
 	LATEST_NEWS,
