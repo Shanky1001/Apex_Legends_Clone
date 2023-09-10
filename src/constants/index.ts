@@ -1,4 +1,21 @@
-import { Gun, Head, News1, News2, News3, Trophy } from "assets";
+import {
+	BrokenMoon1,
+	BrokenMoon2,
+	Gun,
+	Head,
+	KingsCanyon1,
+	KingsCanyon2,
+	News1,
+	News2,
+	News3,
+	Olympus1,
+	Olympus2,
+	StormPoint1,
+	StormPoint2,
+	Trophy,
+	WorldEdge1,
+	WorldEdge2,
+} from "assets";
 import {
 	about,
 	battleRoyal,
@@ -6,6 +23,8 @@ import {
 	free,
 	joinConversation,
 	latestNews,
+	mapDetails,
+	maps,
 	social,
 } from "types";
 
@@ -375,6 +394,72 @@ const JOIN_CONVERSATION: joinConversation[] = [
 	},
 ];
 
+const MapsList: maps[] = [
+	{
+		name: "Broken Moon",
+		link: "BrokenMoon",
+	},
+	{
+		name: "Kings Canyon",
+		link: "KingsCanyon",
+	},
+	{
+		name: "World's Edge",
+		link: "World'sEdge",
+	},
+	{
+		name: "Olympus",
+		link: "Olympus",
+	},
+	{
+		name: "Storm Point",
+		link: "StormPoint",
+	},
+];
+
+const MapData: mapDetails[] = [
+	{
+		name1: "Broken Moon",
+		name2: "BrokenMoon",
+		map_img1: BrokenMoon1 as string,
+		map_img2: BrokenMoon2 as string,
+		details:
+			"Boreas’ moon, Cleo, was once whole–until a meteor and a myth broke it apart. Unbeknownst to the peoples of Boreas, the meteor didn’t just split the moon and cause surface-level destruction, but also sent the entire planet on a path to destruction. It wasn’t until researchers discovered the link between the moon and an increase in devastating weather events that the nations of Boreas came together and promised to heal Cleo, naming their efforts Project Hope. What previously was an unoccupied satellite became a teeming colony of researchers, engineers, and builders. Workers mended divides, celestial rock became fields, and new technologies were born. However, long years and slow progress caused the peoples’ hearts and wallets to turn from Hope. This forced the Cleo Restoration Committee to privatize the moon for funding–with townhomes, shopping centers, and prestige burial plots added. Now, Cleo is a collection of public and private enterprises, including the Apex Games, all with the hope of saving Cleo and Boreas.",
+	},
+	{
+		name1: "KINGS CANYON",
+		name2: "KINGSCANYON",
+		map_img1: KingsCanyon1 as string,
+		map_img2: KingsCanyon2 as string,
+		details:
+			" Once a simple settlement on Solace, the island known as Kings Canyon didn't thrive until the IMC chose it as a hub for research and development. It housed an airbase, a water treatment plant, and a plethora of other facilities to support IMC operations. To blow off steam, the IMC soldiers stationed here would compete in a gladiator-esque combat arena they nicknamed ‘Thunderdome’, the predecessor of the Apex Games. Secretly, it was also home to underground facilities that hid the IMC’s more radical operations–like a highly classified project on Phase tech and a program to create a simulacra army powered by a single brain.In the years since the IMC left the Outlands, the island has undergone many changes due to Syndicate construction projects and freak incidents. The most notable being the destruction of the Repulsor Tower, an underground explosion that sank Thunderdome and Skulltown, and a ship crash that obliterated the northern edge of Kings Canyon. Now, the Syndicate is further altering the landscape with terraforming projects to its caves, and salvage operations for Relic (the area formerly known as Skull Town). But no matter how it changes, Kings Canyon will always be the first home of the Apex Games.",
+	},
+	{
+		name1: "WORLD'S EDGE",
+		name2: "WORLD'SEDGE",
+		map_img1: WorldEdge1 as string,
+		map_img2: WorldEdge2 as string,
+		details:
+			"A harsh planet beset by intense volcanic activity, Talos was once deemed uninhabitable, and only small luddite settlements took root there. However, it became a hotbed of IMC activity when a rare mineral compound was discovered beneath its surface. Heat-reducing towers were built to super-cool its natural lava flows and allow resource extraction - the facility that housed them was optimistically dubbed “New Dawn”, and the town of World’s Edge grew around it.Decades ago, an explosion in one of the towers covered the surrounding area in a lethal flash freeze. World’s Edge was abandoned, its only remaining inhabitants a small community of hunters who once spurned modern technology (but tentatively accepted it again under the guidance of their beloved local hero, Bloodhound). However, its ruins and the planet’s energy-rich soil drew the attention of two critical groups: the Mercenary Syndicate and Hammond Robotics. Today, World’s Edge is the second home of the Apex Games and a key operational center for Hammond Robotics, which installed the latest in modern mining technology - the Planet Harvester - to begin its own resource extraction.",
+	},
+	{
+		name1: "OLYMPUS",
+		name2: "OLYMPUS",
+		map_img1: Olympus1 as string,
+		map_img2: Olympus2 as string,
+		details:
+			"Once a city built on dreams, Olympus was a utopia floating in clouds above Psamathe. Here, the brightest minds in the Outlands could gather and exchange ideas, leading to breakthroughs in the sciences and arts. However, an accident in an experimental research facility led to the creation of the Phase Rift (a massive bubble of Phase energy), and the Outlands’ best and brightest quickly abandoned the city. With the support of the Mercenary Syndicate, Hammond Robotics stepped in to transform Olympus into a new stage for the Apex Games.Since then, a ship from the Icarus Fleet brought a deadly virus along with powerful Medusa Vines to Olympus. While the virus was cured, the vines remained and kept the ship docked to the city. Additionally, a disastrous attempt to transport Olympus to a new location using phase technology sent the city into a tailspin, its structures being littered across the terrain as it stabilized. The changes shook up the Games, creating new challenges for participating Legends.",
+	},
+	{
+		name1: "STORM POINT",
+		name2: "STORMPOINT",
+		map_img1: StormPoint1 as string,
+		map_img2: StormPoint2 as string,
+		details:
+			"This deserted island wasn’t always so deserted. Beautiful and teeming with resources, Storm Point was the prime candidate for early IMC expeditions to planet Gaea. However, IMC settlement teams quickly discovered that intense tropical storms plague the island and a permanent settlement was established nearby–the city of Suotamo. As the city grew, the IMC built power-generating storm catchers on Storm Point to keep up with their energy needs.When the IMC pulled out of the Outlands, the storm catchers fell into disrepair. Left with only one functional storm catcher and few resources, the naive citizens of Storm Point decided to pull it down for parts. The absence of the storm catcher exacerbated the surrounding storms, causing them to overtake the island. Later, a survey of the area revealed previously unknown settlements but no survivors. The island was then abandoned for many years, save for the occasional scavenger or pirate, until it caught the eye of the Mercenary Syndicate.They knew there was old IMC tech and dangerous wildlife on Storm Point, but they didn’t realize how deadly the island was until the rumblings of a colossal sea beast woke the old IMC defenses. Now, Spectres roam fully-stocked IMC Armories, giving Apex Games competitors a new challenge.",
+	},
+];
+
 export {
 	ABOUT,
 	SOCIAL,
@@ -385,4 +470,6 @@ export {
 	BATTLE_ROYAL,
 	COUNTRIES,
 	JOIN_CONVERSATION,
+	MapsList,
+	MapData,
 };

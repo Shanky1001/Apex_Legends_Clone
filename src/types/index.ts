@@ -68,10 +68,22 @@ export interface country {
 }
 
 export interface joinConversation {
-	name:string,
-	href:string
+	name: string;
+	href: string;
 }
 
+export interface maps {
+	name: string;
+	link: string;
+}
+
+export interface mapDetails {
+	name1:string,
+	name2:string,
+	map_img1:string,
+	map_img2:string,
+	details:string
+}
 
 // Extras
 export interface svgImage {
