@@ -20,6 +20,16 @@ import ApexGlobalLogo from "./images/apex-global-series-logo.png";
 import TeenWarning from "./images/teen-warning.png";
 import ApexMobileLogo from "./images/apex-mobile-logo.png";
 import ApexFooterLogo from "./images/apex-footer-logo.png";
+import BrokenMoon1 from "./images/brokenMoon1.jpg";
+import BrokenMoon2 from "./images/brokenMoon2.jpg";
+import KingsCanyon1 from "./images/kingsCanyon1.jpg";
+import KingsCanyon2 from "./images/kingsCanyon2.jpg";
+import WorldEdge1 from "./images/worldEdge1.jpg";
+import WorldEdge2 from "./images/worldEdge2.jpg";
+import Olympus1 from "./images/olympus1.jpg";
+import Olympus2 from "./images/olympus2.jpg";
+import StormPoint1 from "./images/stormPoint1.jpg";
+import StormPoint2 from "./images/stormPoint2.jpg";
 
 export {
 	EA_Logo,
@@ -42,5 +52,16 @@ export {
 	RespawnLogo,
 	ApexGlobalLogo,
 	ApexMobileLogo,
-	TeenWarning,ApexFooterLogo
+	TeenWarning,
+	ApexFooterLogo,
+	KingsCanyon1,
+	KingsCanyon2,
+	BrokenMoon1,
+	BrokenMoon2,
+	Olympus1,
+	Olympus2,
+	StormPoint1,
+	StormPoint2,
+	WorldEdge1,
+	WorldEdge2,
 };

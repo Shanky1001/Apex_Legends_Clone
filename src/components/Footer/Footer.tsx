@@ -63,8 +63,8 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="w-full h-[1px] bg-[#595959]"></div>
-					<div className="w-full h-[150px] mt-4 justify-between fcc 1225:frc">
-						<div className=" w-full 1225:w-[45%] h-full frc  justify-between flex-wrap">
+					<div className="w-full h-[150px] mt-4 760:justify-between fcc 1225:frc">
+						<div className="w-full 1225:w-[45%] h-full frc justify-between flex-wrap">
 							<a href="https://www.ea.com/games/apex-legends/compete">
 								<img
 									src={ApexFooterLogo}
@@ -80,13 +80,13 @@ const Footer = () => {
 							<a href="http://www.respawn.com/">
 								<img
 									src={RespawnLogo}
-									className="w-[130px] 400:w-[150px] 1090:w-[200px] "
+									className="w-[100px] 400:w-[150px] 1090:w-[200px] "
 								/>
 							</a>
 						</div>
 						<div className="h-full fcc items-center 400:items-end justify-center ">
 							<a href="http://www.esrb.org/">
-								<img src={TeenWarning} />
+								<img src={TeenWarning} className={"w-[150px] 760:w-full"} />
 							</a>
 						</div>
 					</div>
