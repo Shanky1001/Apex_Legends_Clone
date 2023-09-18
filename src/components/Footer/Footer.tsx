@@ -28,7 +28,7 @@ const Footer = () => {
 					>
 						<div className="w-full 1225:w-[65%] h-[40%]  1225:h-full  frc  justify-between  flex-wrap  ">
 							{JOIN_CONVERSATION.map((data: joinConversation) => (
-								<div className="w-auto h-auto mr-[10px]">
+								<div className="w-auto h-auto mr-[10px]" key={data.href}>
 									<a
 										key={data.name}
 										href={data.href}

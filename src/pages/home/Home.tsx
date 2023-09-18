@@ -96,7 +96,7 @@ const Home: FC = () => {
 								</div>
 								<div className="w-full h-[81%] frc items-start justify-center flex-wrap ">
 									{LATEST_NEWS.map((data: latestNews) => (
-										<NewsCard data={data} />
+										<NewsCard data={data} key={data.href} />
 									))}
 								</div>
 							</div>
@@ -125,7 +125,7 @@ const Home: FC = () => {
 								</div>
 								<div className="w-full h-[80%] fcc 720:justify-center text-white  720:frc 720:gap-4 flex-wrap">
 									{BATTLE_ROYAL.map((data) => (
-										<div className="w-[50%] h-[500px] 720:w-[45%] 1000:w-[30%] justify-center 1225:h-[90%] fcc">
+										<div key={data.image} className="w-[50%] h-[500px] 720:w-[45%] 1000:w-[30%] justify-center 1225:h-[90%] fcc">
 											<img
 												src={data.image}
 												className="w-[300px] 400:w-full max-w-2xl"

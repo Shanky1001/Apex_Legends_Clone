@@ -94,3 +94,15 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.container_loading path {
+	opacity: 0.95;
+}
+.container_loading svg {
+	position: relative;
+	top: 100px;
+	width: 205px;
+	height: 210px;
+	margin: 0 auto;
+	display: block;
+}
