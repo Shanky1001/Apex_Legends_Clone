@@ -87,7 +87,7 @@ export const US_FLag = ({className}:svgImage) => {
 			<path
 				d="M0,450H7410m0,600H0m0,600H7410m0,600H0m0,600H7410m0,600H0"
 				stroke="#fff"
-				stroke-width="300"
+				strokeWidth="300"
 			/>
 			<rect width="2964" height="2100" fill="#3c3b6e" />
 			<g fill="#fff">

@@ -1,3 +1,4 @@
+import Loading from "components/Loading/Loading";
 import LayoutWrapper from "LayoutWrapper";
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -33,8 +34,6 @@ export default App;
 
 const SuspenseWrapper = (props: SuspenseWrapperProps) => {
 	return (
-		<React.Suspense fallback={<h1>loading ...</h1>}>
-			{props.children}
-		</React.Suspense>
+		<React.Suspense fallback={<Loading />}>{props.children}</React.Suspense>
 	);
 };
