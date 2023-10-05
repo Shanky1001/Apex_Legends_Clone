@@ -13,11 +13,9 @@ Welcome to the Apex Legends Website Clone project! This project is a replica of 
   - [Installation](#installation)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-<!-- - [Folder Structure](#folder-structure) -->
 - [Usage](#usage)
 - [Data Sources](#data-sources)
 - [Contributing](#contributing)
-<!-- - [License](#license) -->
 - [Acknowledgments](#acknowledgments)
 - [Contact Information](#contact-information)
 - [Future Enhancements](#future-enhancements)
@@ -65,25 +63,6 @@ Before you begin, ensure you have met the following requirements:
 - Home Page: A welcoming page introducing Apex Legends.
 - Legends Page: Information about the legends in the game.
 - Weapons Page: Details about the weapons used in Apex Legends.
-
-<!-- ## Folder Structure
-
-```
-apex-legends-clone/
-├── src/
-│   ├── components/
-│   │   ├── Header.js
-│   │   ├── Home.js
-│   │   ├── Legends.js
-│   │   ├── Weapons.js
-│   │   ├── Footer.js
-│   ├── App.js
-│   ├── index.js
-├── public/
-├── package.json
-├── README.md
-├── ...
-``` -->
 
 ## Usage
 
